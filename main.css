@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display:flex;
+    min-width: 355px;
+    height:48px;
+}
+
+.right {
+    flex:1;
+}
+
+.left {
+    width:221px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.left .number1 .gmail{
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0,0,0,0.87);
+    vertical-align: middle;
+}
+
+.left .number1 .gmail:hover ,
+.left .number2 .img:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left .number2 .img{
+    text-decoration: none;
+    padding-right: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0,0,0,0.87);
+}
+
+.number3 {
+    padding: 4px;
+}
+
+.tool{
+    font-size: 24px;
+    padding: 0 4px;
+}
+.fa-th{
+    margin: auto;
+    font-size: 24px;
+    color: #333;
+}
+
+.number3:hover{
+    background-color: rgba(60,64,67,0.08);;
+    border-radius: 50%;
+}
+
+.left .User {
+    width: 32px;;
+    padding-top: 32px;
+    background-image: url('https://scr.vn/wp-content/uploads/2020/08/H%C3%ACnh-girl-xinh-d%E1%BB%85-th%C6%B0%C6%A1ng-l%C3%A0m-h%C3%ACnh-%C4%91%E1%BA%A1i-di%E1%BB%87n.jpg');
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #333;
+    margin:auto;
+}
+.left .User:hover {
+    box-shadow: 0 0 8px rgb(77, 71, 71);
+}
+
+.content {
+    min-width: 350px;
+}
+
+.main-img{
+    background-image:url(./img/google_logo.svg);
+    height: 92px;
+    width: 272px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+    margin-top: calc(200px - 92px);
+}
+
+.search {
+    display: flex;
+    height:44px;
+    max-width: 561px;
+    min-width: 337px;
+    border: 2px solid rgb(204, 198, 198);
+    align-items: center;
+    justify-content:space-between;
+    border-radius:20px;
+    margin:auto;
+    box-shadow: 0 0 5px rgb(204, 198, 198);
+    margin-top: 28px;
+}
+
+.fa-search ,
+.fa-microphone {
+    color:black;
+    padding: 0 18px;
+}
+
+.input {
+    height: 100%;
+    width:100%;
+    border:none;
+    z-index: 1000;
+    outline: none;
+    font-size: 16px;
+}
+
+.box-list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(112px * 5);
+    justify-content: center;
+    max-height: 224px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.item{
+    width: 112px;
+    height: 112px;
+    position: relative;
+    text-decoration: none;
+}
+
+.fa-ellipsis-v{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(128 134 139);
+    transition: 1s;
+    opacity: 0;
+}
+
+.box-list>:hover{
+    background-color: rgb(32 33 36 / 10%);
+    border-radius: 4px;
+}
+.box-list>:hover .fa-ellipsis-v{
+    opacity: 1;
+    z-index: 2;
+}
+
+.icon {
+    color: red;
+    margin:auto;
+    margin-top: 24px;
+    font-size: 28px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: rgb(241 243 244);
+    border-radius: 24px;
+}
+
+.text{
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
